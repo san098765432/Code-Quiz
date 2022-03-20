@@ -31,7 +31,8 @@ background: pink;
            
 
 .info_box.activeInfo,
-.quiz_box.activeQuiz{
+.quiz_box.activeQuiz,
+.result_box.activeResult{
     z-index: 5;
     opacity: 1;
     pointer-events: auto;
@@ -189,6 +190,14 @@ padding: 15px 35px;
     user-select: none;
 }
 
+.quiz_box header .time_line{
+    position:absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: lightcoral;
+}
+
 .quiz_box section{
    padding: 25px 30px 20px 30px;
    background: white;
@@ -242,16 +251,34 @@ margin-bottom: 0px;
 }
 
 .option_list .option .icon.tick{
-   color: plum;
-   border-color: plum;
+   color: green;
+   border-color: green;
  }
  
 
  .option_list .option .icon.cross{
-    color: plum;
-    border-color: plum;
+    color: red;
+    border-color: red;
   }
   
+  .option_list .option.correct{
+    color: green;
+    border-color:green;
+  }
+
+  .option_list .option.incorrect{
+    color: red;
+    border-color:red;
+  }
+
+
+  .option_list .option.disabled{
+    pointer-events: none;
+  }
+
+
+
+
  .quiz_box footer{
      height: 60px;
      width: 100%;
@@ -276,6 +303,7 @@ footer .total_que span p{
  }
 
  footer .next_btn{
+     display: none;
      height: 40px;
      padding:  0 13px;
      font-size: 18px;
