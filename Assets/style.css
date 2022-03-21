@@ -43,12 +43,12 @@ background: pink;
 .start_btn button{
     font-size: 25px;
     font-weight: 500;
-    color: purple;
+    color: white;
     padding: 15px 30px;
     outline: none;
     border: none;
     border-radius: 30px;
-    background: green;
+    background: pink;
     cursor: pointer;
 }
 

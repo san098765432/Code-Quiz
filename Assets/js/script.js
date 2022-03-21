@@ -6,7 +6,7 @@ const continue_btn = info_box.querySelector(".buttons .restart");
 const quiz_box = document.querySelector(".quiz_box");
 const timeCount = quiz_box.querySelector(".timer .timer_sec");
 const timeLine = quiz_box.querySelector("header .time_line");
-const timeLine = quiz_box.querySelector("header .time_line");
+
 
 const option_list = document.querySelector(".option_list");
 
@@ -40,11 +40,14 @@ let widthValue = 0;
 let userScore = 0;
 
 
+
 const next_btn = quiz_box.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".buttons .restart");
 const quit_quiz = result_box.querySelector(".buttons .quit");
 
+
+//if restart quiz button is clicked
 restart_quiz.onclick = ()=>{
    quiz_box.classList.add("activeQuiz");
    result_box.classList.remove("activeResult");
@@ -62,6 +65,7 @@ restart_quiz.onclick = ()=>{
   next_btn.style.display = "none";
 }
 
+//if quit quiz button is clicked
 quit_quiz.onclick = ()=>{
     window.location.reload();
 }
@@ -173,6 +177,7 @@ function startTimer(time){
         if(time < 0){
             clearInterval(counter);
             timeCount.textContent = "00";
+            
 
             let correctAns = questions[que_count].answer;
             let allOptions = option_list.children.length;
@@ -203,12 +208,6 @@ function startTimerLine(time){
 
     }
 }
-
-
-
-
-
-
 
 
 
