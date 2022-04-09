@@ -25,10 +25,7 @@ THEN I can save my initials and my score
 
 
 # LINK TO GITHUB
-<<<<<<< HEAD
-https://github.com/san098765432/Code-Quiz 
-=======
-https://github.com/san098765432/Code-Quiz
->>>>>>> eebd48681aeb6b7bb36a877e539d88571a38476b
+
 
 # LINK TO DEPLOYED APPLICATION
+https://san098765432.github.io/Code-Quiz/ 
