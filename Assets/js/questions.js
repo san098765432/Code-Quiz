@@ -53,7 +53,7 @@ let questions = [
             "Extensible Markup Language",
             "Executable Markup Language",
             "Extra Multiple-Programme Language",
-            "Examine Multiple Lnaguages"
+            "Examine Multiple Languages"
         ]
     },
 ];
