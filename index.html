@@ -8,10 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
-    <!--Title of Work-->
     <title> Code Quiz </title>
 
-    <!-- Link to CSS-->
+    <!-- Linking to CSS-->
     <link rel="stylesheet" href="./Assets/style.css" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -21,93 +20,111 @@
 
 
 <body>
-    <!-- Start Quiz Button-->
-   <div class="start_btn"><button>Start Quiz</button></div>
+    <!-- Start Game Button-->
+   <nav class="start_game"><button>Start Game </button></nav>
 
-<!-- Info Box-->
-<div class="info_box">
-<div class= "info_title">
-<span> Some Rules of This Quiz </span>
-</div>
+<!-- Game Rules -->
+<nav class="info_box">
+<nav class= "info_title">
+<span> RULES OF THE GAME! </span>
+</nav>
 
-<div class ="info_list">
-     <div class= "info" > 1. You will have <span>20 seconds </span> per question </div> 
-     <div class ="info">2. Once you select an answer you cannot re-select </div>
-     <div class ="info">3. You will be awarded points on the basis of your answer</div>
-     <div class ="info">4. You cannot select any option once the timer goes off</div>
-     <div class ="info">5. You cannot exit the quiz once you have started playing </div>
-</div>
+<nav class ="game_rules">
+     <nav class= "info" > 1. You will have <span>20 seconds </span> per question </nav> 
+     <nav class ="info">2. You will be awarded points on the basis of your answer</nav>
+     <nav class ="info">3. You cannot exit the quiz once you have started playing </nav>
+</nav>
 
 
- <div class ="buttons">
-     <button class = "quit"> Exit Quiz </button>
-     <button class = "restart"> Continue</button>
-    </div>
-</div>
+ <nav class ="buttons">
+     <button class = "end_game"> Exit Game  </button>
+     <button class = "continue"> Continue</button>
+    </nav>
+</nav> 
 
-
-
-<!-- Quiz Box -->
-<div class ="quiz_box" >
+<!-- Questions -->
+<nav class ="questions_box" >
   <header>
-<div class = "title"> Quiz Application </div>
-<div class="timer">
-<div class = "time_text"> Time Left </div>
-<div class="timer_sec">20</div>
-</div>
-<div class="time_line"></div>
+<nav class = "title"> Questions: </nav>
+<nav class="timer">
+<nav class = "timer"> Time </nav>
+<nav class="seconds">20</nav>
+</nav>
+<nav class="time_line"></nav>
   </header>
 <section>
-    <div class ="que_text">
+    <nav class ="question">
       <!--<span> What does HTML stand for? </span>--> 
-    </div>
-    <div class="option_list">
-        <div class ="option">
+    </nav>
+    <nav class="possible_answers">
+        <nav class ="option">
             <span>Hyper Text Preprocessor</span>
-            <div class="icon tick"><i class="fas fa-check"></i></div>
-        </div>
-        <div class= "option">
+            <nav class="icon tick"><i class="fas fa-check"></i></nav>
+        </nav>
+        <nav class= "option">
             <span>Hyper Text Markup Language</span>
-            <div class="icon cross"><i class="fas fa-times"></i></div>
-        </div>
-        <div class= "option">
+            <nav class="icon cross"><i class="fas fa-times"></i></nav>
+        </nav>
+        <nav class= "option">
             <span>Hyper Text Multiple Language</span>
-        </div>
-        <div class= "option">
+        </nav>
+        <nav class= "option">
             <span>Hyper Tool Multi Language</span>
-        </div>
- </div>
+        </nav>
+ </nav>
 </section>
 
 
-<!-- Quiz Box Footer-->
+<!-- Footer-->
 <footer>
-    <div class="total_que">
+    <nav class="correct_answers">
         <span><p>2</p>Of<p>5</p>Questions</span>
-    </div>
-<button class="next_btn"> Next Que</button>
+    </nav>
+<button class="next_question"> Next </button>
 </footer>
-</div>
+</nav>
 
 
 
-<!--Result Box-->
-<div class="result_box">
-<div class ="icon">
+<!--Final Score Section-->
+<nav class="score">
+<nav class ="icon">
     <i class="fas fa-crown"></i>
-</div>
-<div class="complete_text">You have completed the quiz!</div>
-<div class="score_text">
+</nav>
+<nav class="comment">Congrats queen!!! You have completed the quiz!</nav>
+<nav class="total_mark">
     <!--<span> You scored <p>2</p> out of <p>5</p></span>-->
+</nav>
+<nav class="buttons"> 
+    <button class="continue">Replay Game </button>
+    <button class="end_game">End Game </button>
+</nav>
+</nav>
+
+
+
+<!--Leadership Board Section-->
+<form action="post">
+    <div id="Leadership_board">
+      <h2>Score Board:</h2>
+      <ol id="Leadership_score"></ol>
+    </div>
+    <label id="namelabel" for="name">Enter your name here:</label>
+    <input type="text" id="name" /><br />
+    <span id="inputError"></span><br />
+    <button id="enter_button">Enter</button><br />
+  </form>
 </div>
-<div class="buttons"> 
-    <button class="restart">Replay Quiz</button>
-    <button class="quit">Quit Quiz</button>
-</div>
-</div>
+
+
 
 <script src="assets/js/questions.js"></script>
 <script src="assets/js/script.js"></script>
+
+
+
+
+
 
 
 
