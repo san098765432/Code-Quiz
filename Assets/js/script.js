@@ -241,6 +241,17 @@ function printHighscores() {
   }
   
   document.getElementById("clear").onclick = clearHighscores;
+
+  var enterbutton = document.getElementById("enter_button")
+
+  enterbutton.addEventListener("click", saveScore);
+  
+  function saveScore() {
+    event.preventDefault()
+    localStorage.setItem("highscore", highscorevariable);
+}
+
+
   
   // run function when page loads
   printHighscores();
