@@ -1,60 +1,64 @@
-//Creating an array and passing the number, questions, options and answers
 let questions = [
     {
+       
         numb: 1,
-        question: "What does HTML stand for?",
-        answer:  "Hyper Text Markup Language",
+        question:  "What does JS stand for in relation to this coding course?",
+        answer:  "Java Script",
         options: [
-            "Hyper Text Preprocessor",
-            "Hyper Text Markup Language",
-            "Hyper Text Multiple Language",
-            "Hyper Tool Multi Language"
+            "Just Saying",
+             "Java Script",
+              "Java Shava", 
+              "Jay Sean" 
         ]
+
     },
     {
-        numb: 2,
-        question: "What does CSS stand for?",
-        answer:  "Cascading Style Sheet",
-        options: [
-            "Common Style Sheet",
-            "Colourful Style Sheet",
-            "Computer Style Sheet",
-            "Cascading Style Sheet"
-        ]
-    },
+                numb: 2,
+                question: "What does CSS stand for?",
+                answer:  "Cascading Style Sheet",
+                options: [
+                    "Canada Spain Sushi",
+                    "Colourful Styling Sheet",
+                    "Computer Style System",
+                    "Cascading Style Sheet"
+                ]
+     },
     {
-        numb: 3,
-        question: "What does PHP stand for?",
-        answer:  "Hypertext Preprocessor",
-        options: [
-            "Hypertext Preprocessor",
-            "Hypertext Programming",
-            "Hypertext Preprogramming",
-            "Hometext Preprocessor"
-        ]
-    },
-    {
-        numb: 4,
-        question: "What does SQL stand for?",
-        answer:  "Structured Query Language",
-        options: [
-            "Stylish Question Language",
-            "Stylish Query Language",
-            "Statement Question Language",
-            "Structured Query Language"
-        ]
+       
+        
+                    numb: 3,
+                    question: "Which of the following is NOT a JS data type?",
+                    answer:  "Thread",
+                    options: [
+                        "Thread",
+                        "Boolean",
+                        "String", 
+                        "Undefined"
+                    ]
+     },
+   
+     {
+                    numb: 4,
+                    question: "Which of the following is classified as a boolean value?",
+                    answer: "False",
+                    options: [
+                        "Yes",
+                        "No",
+                        "Maybe",
+                        "False"
+                    ]
     },
 
     {
-        numb: 5,
-        question: "What does XML stand for?",
-        answer:  "Extensible Markup Language",
-        options: [
-            "Extensible Markup Language",
-            "Executable Markup Language",
-            "Extra Multiple-Programme Language",
-            "Examine Multiple Languages"
-        ]
-    },
-];
- 
+                numb: 5,
+                question: "What does XML stand for?",
+                answer:  "Extensible Markup Language",
+                options: [
+                    "Extensible Markup Language",
+                    "Executable Markup Language",
+                    "Extra Multiple-Programme Language",
+                    "Examine Multiple Languages"
+                ]
+            },
+        ];
+
